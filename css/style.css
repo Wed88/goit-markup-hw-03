@@ -50,11 +50,12 @@ img {
 }
 
 .container {
-    width: 1128px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .section {
@@ -95,6 +96,10 @@ img {
     align-items: center; 
 }
 
+.logo-header {
+    margin-right: 76px;
+}
+
 .logo, .logo-web, .logo-studio {
     font-family: var(--second-font);
     font-weight: 800;
@@ -113,7 +118,6 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .nav-link {
@@ -122,6 +126,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active, .address-link:hover, .address-link:focus {
@@ -161,7 +167,7 @@ img {
 }
 
 .main-title {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -178,6 +184,7 @@ img {
     letter-spacing: 0.04em;
     color: var(--whiteBackground-color);
     background: var(--primaryBrand-color);
+    min-width: 169px;
     padding: 16px 32px;
     cursor: pointer;
     border: none;
@@ -206,13 +213,13 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    margin-bottom: 8px;
 }
 
 .features-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
 }
 
 /* What are we doing */
@@ -274,6 +281,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--dark-color);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .team-text {
@@ -282,6 +290,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    text-align: center;
 }
 
 /* Footer */
@@ -290,6 +299,11 @@ img {
     background: var(--dark-color);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-studio-footer {
@@ -303,7 +317,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--light-color);
-    margin-top: 17.5px
 }
 
 /* Portfolio */
